@@ -9,5 +9,6 @@
 <body>
 	<%@ include file="menu.jsp"%>
 	hello jsp users
+	<c:out value="taglib" />
 </body>
 </html>
