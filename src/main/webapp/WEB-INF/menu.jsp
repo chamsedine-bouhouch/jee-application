@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 
 <ul>
-  <li> Item one </li>
-  <li> Item two </li>
+  <li> <a href="/jee-application">Home page</a> </li>
+  <li> <a href="/jee-application/users">Users page</a> </li>
 </ul>
 
