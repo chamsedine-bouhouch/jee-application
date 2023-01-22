@@ -9,10 +9,18 @@
 </head>
 <body>
 	<%@ include file="menu.jsp"%>
-	<p>Bonjour ${ empty name ? "":name }</p>
-	<%-- 	<p>Bonjour ${names[0]}</p> --%>
-	<c:out value="Java" />
-	<p>${author.firstName}${author.lastName}is the father of Java</p>
+
+	<!-- Servlet Params -->
+	<p>Hey! ${ empty name ? "":name }</p>
+	<p>Hey! ${names[0]}</p>
+
+	<!-- Java Beans -->
+	<p>${author.firstName} ${author.lastName} is the father of Java</p>
 	<p>${author.active?"He is a Good Guy": "He is Bad Boy"}</p>
+
+	<!-- jstl variables -->
+	<c:set var="language" value="Java EE" scope="page" />
+	<c:out value="${language }" />
+
 </body>
 </html>
