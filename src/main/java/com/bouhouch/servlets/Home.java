@@ -28,7 +28,9 @@ public class Home extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		String name = request.getParameter("name");
+		String[] names= {"Chamseddine","Sabrine" };
 		request.setAttribute("name", name);
+		request.setAttribute("names", names);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/Home.jsp").forward(request, response);
 	}
 

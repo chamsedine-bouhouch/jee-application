@@ -8,13 +8,8 @@
 </head>
 <body>
 <%@ include file="menu.jsp" %>
-<p> Bonjour
-<% String name = (String) request.getAttribute("name");
-out.println(name);
-
-%>
-</p>
-
+<p> Bonjour ${ empty name ? "":name }</p>
+<p> Bonjour ${names[0]}</p>
 
 </body>
 </html>
